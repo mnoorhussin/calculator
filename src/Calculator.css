@@ -1,0 +1,77 @@
+.calculator {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 50px auto;
+  width: 350px;
+  text-align: center;
+}
+
+.calculator h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+.calculator input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  font-size: 24px;
+  color: #495057;
+  text-align: right;
+  box-sizing: border-box;
+  height: 60px;
+  line-height: 40px;
+}
+
+.calculator button {
+  font-size: 24px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e9ecef;
+  color: #212529;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width: 60px;
+  height: 60px;
+}
+
+.calculator button:hover {
+  background-color: #ced4da;
+}
+
+.calculator .button-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculator .button-row button:nth-child(4n),
+.calculator .button-row button:nth-child(4n-1),
+.calculator .button-row button:nth-child(4n-2) {
+  margin-right: 0;
+}
+
+.calculator .button-row button:nth-child(-n+4) {
+  margin-bottom: 10px;
+}
+
+.calculator .button-row button:nth-last-child(-n+5) {
+  margin-top: 10px;
+}
+
+.calculator .button-row button:last-child {
+  margin-right: 0;
+}
+
+.calculator .button-row button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #212529;
+}
